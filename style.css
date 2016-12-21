@@ -2,6 +2,7 @@ div{
 }
 
 html, body{
+        font-family: "Arial", Helvetica, sans-sherif;
         height: 100%;
         width: 100%;
         background-color: #cccccc;
@@ -44,6 +45,11 @@ button:hover{
         transition: 0.4s;
 }
 
+button:active{
+        transition: 0.2s;
+        background-color: rgba(0, 0, 0, 0.5);
+}
+
 #head{
         position: relative;
         background-color: #9f7e69;
@@ -52,7 +58,8 @@ button:hover{
 
 #content{
         height: 80vh;
-        background-color: #D2bba0;
+        background-color: #ffffff;
+        padding: 10px;
 }
 
 #footer{
@@ -69,4 +76,22 @@ button:hover{
         height: 100px;
         display: inline;
         background-color: red;
+}
+
+#icons-wrapper{
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        margin-right: -50%;
+        text-align: center;
+
+}
+
+img{
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 4vh;
+        width: 4vh;
 }
