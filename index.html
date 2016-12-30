@@ -8,12 +8,18 @@
         <div id="wrapper">
         <div id="head">
                 <div id="buttons-wrapper">
-                        <button type="button">HOME</button>
-                        <button type="button">RESUME</button>
-                        <button type="button">ABOUT</button>
+                        <button type="button" class="sliderlink" onclick="slide(0)">HOME</button>
+                        <button type="button" class="sliderlink" onclick="slide(1)">RESUME</button>
+                        <button type="button" class="sliderlink" onclick="slide(2)">ABOUT</button>
                 </div>
         </div>
-        <div id="content">KEKEKEKEKEKEKEKKE</div>
+        <div id="content-wrapper">
+                <div id="content-slider-wrapper">
+                        <div class="con" id="slide1"></div>
+                        <div class="con" id="slide2"></div>
+                        <div class="con" id="slide3"></div>
+                </div>
+        </div>
         <div id="footer">
                 <span id="icons-wrapper">
                 <a href="http://github.com/malefor2">
@@ -22,5 +28,6 @@
                 </span>
         </div>
         </div>
+        <script src="slider.js"></script>
 </body>
 </html>

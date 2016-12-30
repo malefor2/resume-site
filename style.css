@@ -95,3 +95,34 @@ img{
         height: 4vh;
         width: 4vh;
 }
+
+#content-wrapper{
+        width: 100vw;
+        height: 80vh;
+        overflow: hidden;
+}
+
+#content-slider-wrapper{
+        width: 300vw;
+        transition: transform .5s ease-in-out
+}
+
+.con{
+        float: left;
+        width: 100vw;
+        height: 80vh;
+        white-space: normal;
+        background-repeat: no-repeat;
+}
+
+#slide1{
+        background-color: red;
+}
+
+#slide2{
+        background-color: green;
+}
+
+#slide3{
+        background-color: blue;
+}
