@@ -3,17 +3,21 @@
 <head>
         <title>Resume</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="test.js"></script>
 </head>
 <body>
         <div id="wrapper">
         <div id="head">
                 <div id="buttons-wrapper">
-                        <button type="button" class="sliderlink" onclick="slide(0)">HOME</button>
+                        <button type="button" class="sliderlink current" onclick="slide(0)">HOME</button>
                         <button type="button" class="sliderlink" onclick="slide(1)">RESUME</button>
                         <button type="button" class="sliderlink" onclick="slide(2)">ABOUT</button>
                 </div>
         </div>
         <div id="content-wrapper">
+            <div class="side_button" id="left" onclick="slide('l')"><p><</p></div>
+            <div class="side_button" id="right" onclick="slide('r')"><p>></p></div>
                 <div id="content-slider-wrapper">
                         <div class="con" id="slide1"></div>
                         <div class="con" id="slide2"></div>
