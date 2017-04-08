@@ -1,4 +1,5 @@
-div{
+p{
+    margin: 0;
 }
 
 html, body{
@@ -35,6 +36,7 @@ button{
         padding: 2vh 4vh;
         margin-left: 5px;
         margin-right: 5px;
+        background-color: rgba(0, 0, 0, 0.1);
         text-decoration: none;
 }
 
@@ -110,15 +112,12 @@ img{
 }
 
 #slide1{
-        background-color: red;
 }
 
 #slide2{
-        background-color: green;
 }
 
 #slide3{
-        background-color: blue;
 }
 
 .side_button{
@@ -130,16 +129,22 @@ img{
     height: 50px;
     background: white;
     position: absolute;
+    border-radius: 100px;
 }
 
 .side_button#left{
-    left: 0%;
+    left: 1%;
 }
 
 .side_button#right{
-    right: 0%;
+    right: 1%;
 }
 
 .current{
-    background-color: rgba(256, 256, 256, 0.3);
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.current p{
+    color: white;
 }

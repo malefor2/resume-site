@@ -29,4 +29,14 @@ function slide(num){
         }
         wrapper.style.transform = translate;
     }
+    var k = '#' + cur.toString();
+    $(document).ready(function(){
+            $('.sliderlink').removeClass('current');
+            $(k).addClass('current');
+    });
+    console.log(cur);
 }
+
+window.onresize =  function(event){
+    slide(cur);  
+};
